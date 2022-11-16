@@ -1,0 +1,140 @@
+INFO:root:This is a info
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.133:3111/ (Press CTRL+C to quit)
+INFO:root:This is a call to metric api
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:28:42] "GET /metrics HTTP/1.1" 200 -
+INFO:root:This is a call to metric api
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:28:48] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:28:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:28:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:28:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:28:55] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:28:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:00] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:06] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:This is a call to metric api
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:10] "GET /metrics HTTP/1.1" 200 -
+INFO:root:This is a call to metric api
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 10:29:11] "GET /metrics HTTP/1.1" 200 -
+INFO:root:This is a info
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.133:3111/ (Press CTRL+C to quit)
+INFO:root:This is a call to metric api
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:33:20] "GET /metrics HTTP/1.1" 200 -
+INFO:root:This is a call to metric api
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:33:26] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:33:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:33:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:33:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/sumitkumar/nd064_course_1/project/techtrends/app.py", line 48, in post
+    logging.info(post_id +" is fetched" )
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:33:28] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+INFO:root:This is a info
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.133:3111/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:root:This is a info
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 495-203-370
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:38:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:38:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:38:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:1 is fetched
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:38:55] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:38:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:About section is retrieved
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:38:58] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:38:58] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:39:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:39:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:39:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/sumitkumar/nd064_course_1/project/techtrends/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:This is a info
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 495-203-370
+INFO:root:This is a info
+INFO:root:This is a info
+INFO:root:This is a info
+INFO:root:This is a info
+INFO:root:This is a info
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.133:3111/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:root:This is a info
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 495-203-370
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:13] "[35m[1mGET /1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:13] "GET /1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:13] "GET /1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:13] "GET /1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:13] "GET /1?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:52:13] "GET /1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/sumitkumar/nd064_course_1/project/techtrends/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:This is a info
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 495-203-370
+INFO:werkzeug: * Detected change in '/Users/sumitkumar/nd064_course_1/project/techtrends/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:This is a info
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 495-203-370
+INFO:root:This is a info
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.133:3111/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:root:This is a info
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 495-203-370
+INFO:root:2020 CNCF Annual Report is fetched
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:29] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:About section is retrieved
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:33] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:35] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:35] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:CNCF Cloud Native Interactive Landscape is fetched
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:37] "GET /4 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:About section is retrieved
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:39] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:41] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:41] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:51] "[32mPOST /create HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:55:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:root:Kubernetes Certification is fetched
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:56:42] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.133 - - [15/Nov/2022 11:56:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
