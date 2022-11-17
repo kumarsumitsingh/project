@@ -1,0 +1,19 @@
+namespace:
+  name: sandbox
+image:
+  repository: sumitkumarsingh/techtrends
+  tag: latest
+service:
+  port:4111
+  targetport:3111
+  protocol:TCP
+  type:ClusterIP
+
+replicaCount: 1
+resources: {}
+  limits:
+    cpu: 500m
+    memory: 128Mi
+  requests:
+    cpu: 500m
+    memory: 128Mi

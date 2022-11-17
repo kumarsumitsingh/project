@@ -1,0 +1,17 @@
+namespace:
+  name: prod
+image:
+  repository: sumitkumarsingh/techtrends
+  tag: latest
+  imagePullPolicy: Always
+service:
+  port:7111
+
+replicaCount: 5
+resources:
+  limits:
+    cpu: 500m
+    memory: 256Mi
+  requests:
+    cpu: 350m
+    memory: 128Mi
