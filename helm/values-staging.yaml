@@ -4,7 +4,7 @@ image:
   repository: sumitkumarsingh/techtrends
   tag: latest
 service:
-  port: 122
+  port: 5111
 replicaCount: 3
 resources:
   requests:
