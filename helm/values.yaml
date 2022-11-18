@@ -10,7 +10,7 @@ service:
   type:ClusterIP
 
 replicaCount: 1
-resources: {}
+resources:
   limits:
     cpu: 500m
     memory: 128Mi
