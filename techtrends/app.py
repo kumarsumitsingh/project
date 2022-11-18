@@ -4,6 +4,7 @@ import logging
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 db_connection_count=0
+post_count=0
 
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
@@ -89,7 +90,7 @@ def create():
         else:
             connection = get_db_connection()
             db_connection_count=db_connection_count+1
-            #post_count=post_count+1
+            post_count=post_count+1
             connection.execute('INSERT INTO posts (title, content) VALUES (?, ?)',
                          (title, content))
             connection.commit()
