@@ -12,7 +12,7 @@ metadata:
 ## Define the desired configuration for the Deployment resource.
 spec:
   ## Set the number of replicas.
-  replicas: 3
+  replicas: {{ .Values.replicaCount }} 
   ## Identify the pods managed by this Deployment using the following selectors.
   ## In this case, all pods with the label `go-helloworld`.
   selector:
