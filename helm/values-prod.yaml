@@ -5,10 +5,13 @@ image:
   tag: latest
   imagePullPolicy: Always
 service:
-  port:7111
+  port: 7111
 
 replicaCount: 5
 resources:
   requests:
     cpu: 350m
     memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 256Mi

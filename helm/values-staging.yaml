@@ -3,15 +3,14 @@ namespace:
 image:
   repository: sumitkumarsingh/techtrends
   tag: latest
-
 service:
-  port:5111
-
+  port: 122
 replicaCount: 3
 resources:
-  limits:
-    cpu: 500m
-    memory: 128Mi
   requests:
     cpu: 300m
     memory: 90Mi
+  limits:
+    cpu: 500m
+    memory: 128Mi
+  
